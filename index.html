@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width"> 
+        <title>Challenge Encriptador: Javier Mejia</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    
+    </head>
+
+    <body>
+        <header>
+            <section class="sectionheader1">
+            <div class="vertical-table">
+                <div class="vertical-table__content">
+                    <label class="titulo">¡Te damos la bienvenida al encriptador de Javier Mejia con Alura Latam!</label>
+                </div>
+            </div>
+            </section>
+            
+            <section class="sectionheader2">
+                <p class="logo"><a href="https://www.aluracursos.com/"><img src="aluraoracle.png" alt="Logo Alura + Oracle" /></a></p>
+            </section>
+            
+            <section class="sectionheader3">
+                <!-- <img src="./Foto AMPZ-2.png"> //aguegar foto personalizadan   -->
+            </section>
+                
+        </header>
+            
+        <main>
+        
+            <section class="areaizquierda">
+            
+                <div class="mundo">
+                    <img src="./mundo2.png">
+                </div>
+            
+            </section>
+
+            <section class="areacentral">
+                <!-- <div><h6 class="reglasdeingreso">&#9888; Solo letras minúsculas y sin acentos </h6> // &#9888; poner simbolo de  -->
+                <div><h6 class="reglasdeingreso"> Solo letras minúsculas y sin acentos </h6>
+                </div>
+                <div>
+                    <textarea class="text-area" cols="30" rows="10" placeholder="Por favor, ingresa el texto aquí&#128071;.&#10;&#10;Recuerda que no se admiten números, acentos o caracteres especiales" onkeypress="return (event.charCode >= 97 && event.charCode <= 122 || event.charCode == 32)" min="1" id="textarea"></textarea>
+                    <button class="botones" onclick="btnEncriptar()"> Encriptar </button>
+                </div>
+                
+            </section>
+                
+            <section class="areaderecha">
+                <div>
+                    <button class="botoncopiar" id="botoncopiar" onclick="copiar"> Copiar </button> 
+                </div>
+                <div id="wrapper" class="hidden">
+                </div>
+                <div>
+                    <textarea class="mensaje-encriptado" cols="20" rows="10" placeholder="Ningun mensaje fue encriptado, por favor ingresa el texto que deseas encriptar o desencriptar" id="texto" onkeypress="return (event.charCode >= 97 && event.charCode <= 122 || event.charCode == 32)" min="1"></textarea>
+                    <button class="botones" onclick="btnDesencriptar()"> Desencriptar </button>
+                </div> 
+            </section>         
+            
+        </main>
+
+        <script src="script.js"></script>
+        
+        <footer>
+            <p><a href="https://github.com/"><img src="./github36px.png" alt="Logo Alura + Oracle" /></a></p>
+            <p><a href="https://www.linkedin.com/"><img src="./linkedin.png" alt="Logo Alura + Oracle" /></a></p>
+            <img src="./enigma.jpg">
+            <p class="copyright">&copy Copyright @Javier Mejia - 2024</p>
+            <!-- <p>&#128041;</p> -->
+        </footer>
+        
+    </body>
+
+</html>
+
